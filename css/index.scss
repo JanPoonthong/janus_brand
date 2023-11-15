@@ -102,4 +102,93 @@ section.hero {
 }
 
 .more-info {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .desc {
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+
+    svg.close {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      margin: 0em;
+
+      a {
+        color: white;
+        padding:
+          0.5em 1,
+          5em;
+        font-size: 0.9rem;
+
+        &:hover {
+          background: none;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+  }
+
+  .logo {
+    color: black;
+
+    span {
+      color: red;
+    }
+  }
+
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 10em;
+
+    svg.down-arrow {
+      stroke: black;
+      position: unset;
+
+      path {
+        fill: black;
+      }
+    }
+  }
 }
